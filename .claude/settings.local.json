@@ -22,7 +22,11 @@
       "Bash(true)",
       "Bash(tree:*)",
       "Bash(find:*)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(file:*)",
+      "WebFetch(domain:)",
+      "Bash(strings:*)",
+      "Bash(git add:*)"
     ],
     "deny": []
   }
