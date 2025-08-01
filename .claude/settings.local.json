@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pdftotext:*)",
+      "Bash(python3:*)",
+      "Bash(pip3 install:*)",
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(cd:*)",
+      "Bash(grep:*)",
+      "Bash(rm:*)",
+      "Bash(pip3 list:*)",
+      "Bash(ls:*)",
+      "Bash(textutil:*)",
+      "Bash(mdls:*)",
+      "Bash(brew list:*)",
+      "Bash(echo:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(true)",
+      "Bash(tree:*)",
+      "Bash(find:*)",
+      "Bash(git init:*)"
+    ],
+    "deny": []
+  }
+}
