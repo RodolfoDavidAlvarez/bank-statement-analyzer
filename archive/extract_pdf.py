@@ -1,29 +1,42 @@
 #!/usr/bin/env python3
-import PyPDF2
+import subprocess
 import sys
+import os
 
-def extract_pdf_text(pdf_path):
+pdf_path = '/Users/rodolfoalvarez/Documents/Better Systems AI/Nancy Bennet  - Bank Staments Automation/Client Items/Taxes documents for extraction/Taxes 2025 (Inprogress)/Bank Statement NB Personal Account/20250108-statements-2084-.pdf'
+
+# Try using macOS's built-in sips command to convert PDF to text
+try:
+    # First convert PDF to TIFF
+    tiff_path = '/tmp/temp_statement.tiff'
+    subprocess.run(['sips', '-s', 'format', 'tiff', pdf_path, '--out', tiff_path], check=True, capture_output=True)
+    
+    # Then use tesseract if available, or try other methods
     try:
-        with open(pdf_path, 'rb') as file:
-            pdf_reader = PyPDF2.PdfReader(file)
-            text = ""
-            for page_num in range(len(pdf_reader.pages)):
-                page = pdf_reader.pages[page_num]
-                text += page.extract_text()
-            return text
-    except Exception as e:
-        print(f"Error reading PDF: {e}")
-        return None
-
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python extract_pdf.py <pdf_file>")
-        sys.exit(1)
+        result = subprocess.run(['tesseract', tiff_path, '-', '--psm', '6'], capture_output=True, text=True)
+        if result.returncode == 0:
+            print(result.stdout)
+        else:
+            print(f"Tesseract error: {result.stderr}", file=sys.stderr)
+    except FileNotFoundError:
+        print("Tesseract not found, trying alternative method", file=sys.stderr)
+        
+    # Clean up
+    if os.path.exists(tiff_path):
+        os.remove(tiff_path)
+        
+except Exception as e:
+    print(f"Error: {e}", file=sys.stderr)
     
-    pdf_path = sys.argv[1]
-    text = extract_pdf_text(pdf_path)
-    
-    if text:
-        print(text)
-    else:
-        print("Failed to extract text from PDF")
+    # Try using strings command as last resort
+    try:
+        result = subprocess.run(['strings', pdf_path], capture_output=True, text=True)
+        if result.returncode == 0:
+            # Filter for readable text patterns
+            lines = result.stdout.split('\n')
+            for line in lines:
+                # Look for transaction-like patterns
+                if any(char.isdigit() for char in line) and len(line) > 10:
+                    print(line)
+    except Exception as e2:
+        print(f"Strings error: {e2}", file=sys.stderr)

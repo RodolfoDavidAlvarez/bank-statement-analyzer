@@ -31,8 +31,8 @@ For each account, extract:
 - **Date**: Convert MM/DD to YYYY-MM-DD (add year 2024 or 2025 based on context)
 - **Description**: Full transaction description
 - **Amount**: 
-  - Deposits/Interest: Negative (to match our payment convention)
-  - Withdrawals/Fees: Positive (to match our purchase convention)
+  - Deposits/Interest: Positive (credits to account)
+  - Withdrawals/Fees/Payments: Negative (debits from account)
 - **Transaction Type**: Map Chase types to our standard:
   - Deposits → "Payment"
   - Withdrawals → "Purchase"

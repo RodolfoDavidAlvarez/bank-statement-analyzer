@@ -1,0 +1,22 @@
+Description,Amount,Transaction Date,Transaction Type,Status,Statement id,Validator (from Statement id),Bank
+Tesla Inc Tesla Moto,-1171.08,2024-12-12,Purchase,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Zelle Payment To Jana Loureiro,-2500.00,2024-12-13,Payment,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Remote Online Deposit,1258.00,2024-12-16,Credit,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Online Transfer To Chk ...1873,-500.00,2024-12-16,Payment,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Venmo Payment,-97.72,2024-12-16,Payment,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Online Transfer From Chk ...1873,547.05,2024-12-18,Credit,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Lightstream Loan Pmts,-1125.00,2024-12-18,Payment,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Keller Williams Psus_Dec20,355.61,2024-12-23,Credit,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Online Payment To Loan Care Servicing Center,-0.02,2024-12-24,Payment,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Online Payment To Contra Costa Water District,-115.00,2024-12-27,Payment,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Online Payment To Discover Card,-250.00,2024-12-30,Payment,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Online Payment To Wave,-0.10,2024-12-30,Payment,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Netflix.Com Card 0885,-6.99,2024-12-31,Purchase,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Venmo Payment,-45.19,2025-01-03,Payment,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Remote Online Deposit,1258.00,2025-01-06,Credit,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Online Transfer From Chk ...0827,34.28,2025-01-06,Credit,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Online Transfer From Chk ...1873,5000.00,2025-01-08,Credit,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Online Payment To Republic Services,-125.00,2025-01-08,Payment,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Online Payment To The Pool Shark,-280.00,2025-01-08,Payment,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Online Payment To Mr. Cooper,-3200.00,2025-01-08,Payment,Verified,2025-01 - Chase 2084,Passed,Chase 2084
+Interest Payment,0.01,2025-01-08,Credit,Verified,2025-01 - Chase 2084,Passed,Chase 2084
