@@ -9,85 +9,110 @@
 
 **Note:** Other Chase accounts (e.g., Chase 5036) may use a different statement format and require a separate extraction method.
 
-## Overview
+## CRITICAL: Understanding Multi-Account PDF Structure
 
-These specific Chase checking accounts are provided in a consolidated statement format where multiple accounts appear in a single PDF. Each account must be extracted separately while maintaining our standard CSV format.
+### Key Discovery
+**IGNORE the "Primary Account" shown in page headers** - it always shows account 2084 regardless of which account's transactions are on that page.
 
-## CRITICAL: Understanding the PDF Structure
+### How to Identify Account Sections
 
-### 1. Multi-Account Format
-- Single PDF contains all 3 checking accounts
-- Each account has its own section
-- **WARNING**: The header on EVERY page shows "Primary Account: 2084" but this is misleading
-- **IMPORTANT**: Look for "Account Number:" within each section to identify which account the transactions belong to
+1. **Look for CHECKING SUMMARY sections** - Each account starts with its own CHECKING SUMMARY that shows:
+   - Beginning Balance
+   - Ending Balance
+   - Account Number (may be embedded in text)
 
-### 2. Account Identification Rules
+2. **Look for (continued) markers** - Pages marked "TRANSACTION DETAIL (continued)" belong to the previous account
+
+3. **Account order is typically**:
+   - Account 2084 (Personal Premier Plus Checking)
+   - Account 1873 (Business Premier Plus Checking)
+   - Account 8619 (Total Checking)
+
+### Page Structure Pattern
+
+**Example from actual statements:**
+
+January 2025 Statement:
+- Page 2: Account 2084 (complete with CHECKING SUMMARY)
+- Page 3: Account 1873 starts (CHECKING SUMMARY shows Beginning: $4,584.13)
+- Page 4: Account 1873 (continued)
+- Page 5: Account 1873 (continued) ends with balance $16,087.31
+- Page 6: Account 8619 starts
+
+February 2025 Statement:
+- Page 2: Account 2084 (complete with CHECKING SUMMARY)
+- Page 3: Account 1873 starts (CHECKING SUMMARY shows Beginning: $16,087.31)
+- Page 4: Account 1873 (continued)
+- Page 5: Account 1873 (continued) ends with balance $528.22, then Account 8619 starts
+
+## Extraction Rules
+
+### Rule 1: Start of Account Section
+When you see a CHECKING SUMMARY with:
+- Beginning Balance
+- Ending Balance
+- Deposits and Additions
+- Various withdrawal categories
+
+This marks the START of a new account section.
+
+### Rule 2: Continuation Pages
+Pages with "TRANSACTION DETAIL (continued)" at the top belong to the account that started on the previous page(s).
+
+### Rule 3: End of Account Section
+An account section ends when:
+- You see a new CHECKING SUMMARY (start of next account)
+- You reach the ending balance shown in that account's CHECKING SUMMARY
+- The next account type appears (e.g., "CHASE TOTAL CHECKING")
+
+### Rule 4: Transaction Ownership
 To determine which account a transaction belongs to:
 
-1. **Card Numbers**:
+1. **Position in PDF**: Which account section is the transaction in?
+2. **Card Numbers** (confirmation):
    - Card 0885 = Account 2084
    - Card 0665 = Account 1873
-   - No card mentioned = Check other indicators
+   - No card = Could be any account, use position
+3. **DO NOT use transaction type** to determine account ownership
 
-2. **Online Payments**: 
-   - "Online Payment" transactions typically originate from account 2084
-   - Exception: If the page clearly shows "Account Number: 1873" or "Account Number: 8619"
+## Common Extraction Errors to Avoid
 
-3. **Transfers**:
-   - "Online Transfer To Chk ...XXXX" = Debit from the current account
-   - "Online Transfer From Chk ...XXXX" = Credit to the current account
-   - Pay attention to which account is sending vs receiving
+### Error 1: Using Page Headers
+**WRONG**: "This page header says Primary Account 2084, so these transactions belong to 2084"
+**RIGHT**: Ignore headers, use CHECKING SUMMARY sections to identify accounts
 
-4. **Special Payments**:
-   - Environmental AL Rf Pmt = Usually to account 2084
-   - Keller Williams payments = Usually to account 2084
-   - State Farm Ro 27 = Check account number on the page
-   - ADP Tax = Usually from account 1873
-   - Verizon Wireless = Usually from account 1873
+### Error 2: Assuming Transaction Types Determine Account
+**WRONG**: "Online Payments always come from account 2084"
+**RIGHT**: Transactions belong to whichever account section they appear in
 
-## Extraction Method
+### Error 3: Not Following (continued) Pages
+**WRONG**: "New page, might be new account"
+**RIGHT**: If page says "(continued)", it's still the same account
 
-### Step 1: Pre-Analysis
-1. Scan the entire PDF to understand the account structure
-2. Note which pages contain which account's transactions
-3. Create a mental map of transaction ownership
+## Validation Process
 
-### Step 2: Extract Per Account
+### DO NOT Force Reconciliation
+**IMPORTANT**: Extract exactly what's in each account section. Do not move transactions between accounts to make balances reconcile.
 
-For each account, extract ONLY transactions that belong to that account:
+### Verification Steps
+1. Count pages for each account section
+2. Verify the section includes all (continued) pages
+3. Extract ALL transactions in that section
+4. Record the total but DO NOT adjust if it doesn't reconcile
 
-#### Transaction Information
-- **Date**: Convert MM/DD to YYYY-MM-DD (add year based on statement period)
-- **Description**: Full transaction description
-- **Amount**: 
-  - Deposits/Credits/Interest: Positive
-  - Withdrawals/Debits/Fees/Payments: Negative
-- **Transaction Type**: Map based on description
+### If Balances Don't Reconcile
+- Double-check you included all (continued) pages
+- Verify you started and ended at the right places
+- Document the discrepancy but DO NOT move transactions
 
-#### Common Pitfalls to Avoid
-1. **DO NOT** assign online payments to multiple accounts
-2. **DO NOT** rely on the "Primary Account" shown in headers
-3. **DO** verify card numbers match the account
-4. **DO** check the "Account Number:" field on each page
-5. **DO** ensure transfers balance (one account's debit is another's credit)
+## Example Extraction Process
 
-### Step 3: Validation Before Saving
-
-**CRITICAL**: Before saving any file, verify:
-1. Calculate: Beginning Balance + Total Credits - Total Debits = Ending Balance
-2. If reconciliation fails, review transaction assignments
-3. Check for duplicate transactions across accounts
-4. Verify total withdrawals match statement categories:
-   - Checks Paid
-   - ATM & Debit Card Withdrawals  
-   - Electronic Withdrawals
-
-### Step 4: Create Separate Files
-
-Create individual files for each account:
-- `chase_2084_2025-MM_transactions.csv`
-- `chase_1873_2025-MM_transactions.csv`
-- `chase_8619_2025-MM_transactions.csv`
+For February 2025 statement:
+1. Page 2: Found CHECKING SUMMARY → This is account 2084
+2. Page 3: Found CHECKING SUMMARY with Beginning Balance $16,087.31 → This is account 1873
+3. Page 4: Says "(continued)" → Still account 1873
+4. Page 5: Says "(continued)" → Still account 1873 until we see "CHASE TOTAL CHECKING"
+5. Page 5 (bottom): Found "CHASE TOTAL CHECKING" → Account 8619 starts here
 
 ## Transaction Type Mapping
 
@@ -106,36 +131,6 @@ Create individual files for each account:
 | Online Payment | Payment | Bill payments |
 | Venmo Payment | Withdrawal | P2P payments |
 | Recurring Card Purchase | Debit | Subscriptions |
-
-## Reconciliation Formula
-
-For each account:
-```
-Beginning Balance
-+ Deposits and Additions (sum of positive amounts)
-- Checks Paid (sum of checks)
-- ATM & Debit Card Withdrawals (sum of card transactions)
-- Electronic Withdrawals (sum of other withdrawals)
-= Ending Balance
-```
-
-## Example Reconciliation Check
-
-Account 1873 February 2025:
-- Beginning: $16,087.31
-- Deposits: $0.09 (interest only)
-- Checks: -$280.00
-- Card Withdrawals: -$4,496.80
-- Electronic: -$10,782.38
-- Ending: $528.22 ✓
-
-## Red Flags That Indicate Extraction Errors
-
-1. Reconciliation difference of exactly common amounts ($150, $250, $3200, etc.)
-2. Same transaction appearing in multiple accounts
-3. Online payments from account 1873 (usually from 2084)
-4. Card 0885 transactions in account 1873
-5. Card 0665 transactions in account 2084
 
 ## Output Structure
 

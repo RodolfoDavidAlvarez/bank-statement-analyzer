@@ -28,7 +28,10 @@
       "Bash(strings:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(chmod:*)"
+      "Bash(chmod:*)",
+      "Bash(pdfinfo:*)",
+      "mcp__ide__executeCode",
+      "Bash(awk:*)"
     ],
     "deny": []
   }

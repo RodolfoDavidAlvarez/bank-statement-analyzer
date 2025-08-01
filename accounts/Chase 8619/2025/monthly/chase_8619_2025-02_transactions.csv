@@ -1,7 +1,17 @@
 Description,Amount,Transaction Date,Transaction Type,Status,Statement id,Bank and last 4
-State Farm Ro 27 Sfpp,-106.83,2025-01-14,Withdrawal,New,2025-02 - Chase 8619,Chase 8619
-Online Transfer From Chk ...2084,150.00,2025-01-29,Deposit,New,2025-02 - Chase 8619,Chase 8619
-Online Payment To Cowell Homeowners Association,-185.00,2025-01-29,Withdrawal,New,2025-02 - Chase 8619,Chase 8619
-Online Transfer From Chk ...1873,4570.00,2025-02-06,Deposit,New,2025-02 - Chase 8619,Chase 8619
-Online Payment To Rushmore Servicing,-4568.00,2025-02-06,Withdrawal,New,2025-02 - Chase 8619,Chase 8619
-Monthly Service Fee,-12.00,2025-02-07,Fee,New,2025-02 - Chase 8619,Chase 8619
+Card Purchase With Pin  02/03 Lucky #705.Concord CA Concord CA Card 0665,-92.24,2025-02-03,Debit,New,2025-02 - Chase 8619,Chase 8619
+Recurring Card Purchase 02/03 Google *Nest 855-836-3987 CA Card 0665,-8.0,2025-02-04,Debit,New,2025-02 - Chase 8619,Chase 8619
+Card Purchase With Pin  02/04 Best Little Donut Hous Concord CA Card 0665,-14.5,2025-02-04,Debit,New,2025-02 - Chase 8619,Chase 8619
+Recurring Card Purchase 02/04 Paypal *Pypl Paymthly 402-935-7733 CA Card 0665,-42.18,2025-02-05,Debit,New,2025-02 - Chase 8619,Chase 8619
+Card Purchase           02/04 House of Sake Inc Walnut Creek CA Card 0665,-83.55,2025-02-05,Debit,New,2025-02 - Chase 8619,Chase 8619
+Card Purchase With Pin  02/06 Treat Blvd 76 Concord CA Card 0665,-30.86,2025-02-06,Debit,New,2025-02 - Chase 8619,Chase 8619
+Online Transfer To Chk ...8619 Transaction#: 23637622827,-4570.0,2025-02-06,Transfer,New,2025-02 - Chase 8619,Chase 8619
+Card Purchase           02/05 Jersey Mikes 20367 Walnut Creek CA Card 0665,-13.15,2025-02-07,Debit,New,2025-02 - Chase 8619,Chase 8619
+Card Purchase           02/06 Fast & Easy Liquors Concord CA Card 0665,-13.73,2025-02-07,Debit,New,2025-02 - Chase 8619,Chase 8619
+Card Purchase           02/06 Huckleberry's - Concord Concord CA Card 0665,-32.23,2025-02-07,Debit,New,2025-02 - Chase 8619,Chase 8619
+Card Purchase With Pin  02/07 Fashion Cleaners Walnut Creek CA Card 0665,-174.8,2025-02-07,Debit,New,2025-02 - Chase 8619,Chase 8619
+Card Purchase With Pin  02/07 Wholefds Yvr#105 2941 Walnut Creek CA Card 0665,-94.61,2025-02-07,Debit,New,2025-02 - Chase 8619,Chase 8619
+Card Purchase With Pin  02/07 Petroleum & Amenities Walnut Creek CA Card 0665,-90.2,2025-02-07,Debit,New,2025-02 - Chase 8619,Chase 8619
+01/29 Online Payment 23540547303 To Cowell Homeowners Association,-185.0,2025-01-29,Payment,New,2025-02 - Chase 8619,Chase 8619
+02/06 Online Payment 23307481625 To Rushmore Servicing,-4568.0,2025-02-06,Payment,New,2025-02 - Chase 8619,Chase 8619
+Monthly Service Fee,-12.0,2025-02-07,Fee,New,2025-02 - Chase 8619,Chase 8619

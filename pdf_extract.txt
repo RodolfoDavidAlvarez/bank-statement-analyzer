@@ -1,0 +1,169 @@
+000000526021873  
+  000000837532084
+10198090302000000063
+ 3  6 PageofAMOUNT
+CHECK NUMBER DATE
+PAIDAMOUNT
+ DATE DESCRIPTION AMOUNT BALANCE 
+ January 09, 2025 throughFebruary 07, 2025  
+  Primary Account:
+Beginning Balance $16,087.31
+Ending Balance $528.22
+Total Checks Paid $280.00
+Beginning Balance $16,087.31NANCY E BENNETT Account Number: 
+  
+Deposits and Additions 0.09
+Checks Paid -280.00
+ATM & Debit Card Withdrawals -4,496.80
+Electronic Withdrawals -10,782.38
+Annual Percentage Yield Earned This Period 0.01%
+Interest Paid This Period $0.09
+Interest Paid Year-to-Date $0.13
+Interest paid in 2024 for account 000000526021873 was $0.73.
+998  ^ 01/22 $280.00
+If you see a check description in the Transaction Detail section, it means your check has already been converted for
+electronic payment. Because of this, we're not able to return the check to you or show you an image on Chase.com.
+^ An image of this check may be available for you to view on Chase.com.
+01/10 Card Purchase           01/09 Eyelab Factory Outlet San Ramon CA Card
+0665- 35.00 16,052.31
+01/10 Card Purchase           01/09 Chipotle 0221 San Ramon CA Card 0665 - 18.98 16,033.33
+01/10 Card Purchase With Pin  01/10 Treat Blvd 76 Concord CA Card 0665 - 46.29 15,987.04
+01/13 Card Purchase           01/11 Paypal *Pandarestau 626-372-8419 CA Card
+0665- 61.84 15,925.20
+01/13 Recurring Card Purchase 01/11 Ringcentral Inc. 888-898-4591 CA Card
+0665- 47.90 15,877.30
+01/13 Recurring Card Purchase 01/11 State Farm  Insurance 800-956-6310 IL
+Card 0665- 623.03 15,254.27
+01/13 Card Purchase With Pin  01/13 Safeway #1192 Concord CA Card 0665 - 188.50 15,065.77
+01/14 State Farm Ro 27 Cpc-Client 02 S 1067268602 CCD ID: 9000313004 - 33.66 15,032.11
+01/14 Card Purchase With Pin  01/14 Treat Blvd 76 Concord CA Card 0665 - 30.86 15,001.25
+01/15 Card Purchase With Pin  01/15 National Petroleum Con Concord CA Card
+0665- 105.83 14,895.42
+01/16 Venmo            Payment    1039635550955   Web ID: 3264681992 - 2,500.00 12,395.42
+01/16 Card Purchase With Pin  01/16 Treat Blvd 76 Concord CA Card 0665 - 50.00 12,345.42
+01/17 Card Purchase           01/15 Buttercup Concord Concord CA Card 0665 - 44.96 12,300.46 CHASE PREMIER PLUS CHECKING
+CHECKING SUMMARY
+CHECKS PAID
+TRANSACTION DETAIL*start*global product
+*end*global product
+*start*summary
+*end*summary
+*start*post summary message1
+*end*post summary message1
+*start*checks paid section2
+*end*checks paid section2
+*start*transaction detail
+*end*transaction detail
+ 000000837532084
+ 4  6 Pageof DATE DESCRIPTION AMOUNT BALANCEJanuary 09, 2025 throughFebruary 07, 2025  
+  Primary Account:
+  
+01/17 Card Purchase           01/16 4Te*Keller Williams R 925-934-2900 CA Card
+0665- 125.00 12,175.46
+01/17 Card Purchase           01/16 Tourfactory/Collabrat 888-458-3943 WA Card
+0665- 29.95 12,145.51
+01/17 Card Purchase           01/16 Mcdonald's F2033 Concord CA Card 0665 - 16.10 12,129.41
+01/17 Card Purchase With Pin  01/17 Treat Blvd 76 Concord CA Card 0665 - 46.29 12,083.12
+01/21 Card Purchase           01/17 Orange CO Superior C Acarlson@Occo CA
+Card 0665- 7.50 12,075.62
+01/21 Recurring Card Purchase 01/19 Adobe  *800-833-6687 Adobe.Ly/Enus CA
+Card 0665- 12.99 12,062.63
+01/21 Card Purchase           01/19 Paypal *Pypl Payin4 402-935-7733 CA Card
+0665- 18.97 12,043.66
+01/21 Recurring Card Purchase 01/20 Dropbox*K96Hz98Smpxl Dropbox.Com CA
+Card 0665- 11.99 12,031.67
+01/21 Card Purchase With Pin  01/21 Treat Blvd 76 Concord CA Card 0665 - 30.86 12,000.81
+01/21 Card Purchase With Pin  01/21 Wholefds Yvr#105 2941 Walnut Creek CA
+Card 0665- 41.20 11,959.61
+01/22 Card Purchase           01/21 Kings Donuts Concord CA Card 0665 - 8.50 11,951.11
+01/22 ADP - Tax        ADP - Tax  731061468955A00 CCD ID: 9333006057 - 63.00 11,888.11
+01/22 Check                         # 998 - 280.00 11,608.11
+01/23 Recurring Card Purchase 01/22 Paypal *Pypl Paymthly 402-935-7733 CA
+Card 0665- 55.62 11,552.49
+01/24 Card Purchase With Pin  01/24 Kwik Stop Concord CA Card 0665 - 179.93 11,372.56
+01/24 Card Purchase With Pin  01/24 Kwik Stop Concord CA Card 0665 - 30.00 11,342.56
+01/24 Card Purchase With Pin  01/24 Kwik Stop Concord CA Card 0665 - 160.50 11,182.06
+01/27 Card Purchase           01/24 Par*Mr. Pickles Sandwic Concord CA Card
+0665- 23.12 11,158.94
+01/27 Recurring Card Purchase 01/25 Docusign Inc. 800-3799973 De Card 0665 - 35.00 11,123.94
+01/27 Recurring Card Purchase 01/26 Mailchimp   *Misc Mailchimp.Com GA Card
+0665- 198.00 10,925.94
+01/28 Card Purchase           01/27 Baskin #360138 Concord CA Card 0665 - 10.38 10,915.56
+01/28 Verizon Wireless Payments                   PPD ID: 4223344794 - 126.64 10,788.92
+01/28 Card Purchase With Pin  01/28 M B Enterprises Pleasant Hill CA Card 0665 - 50.00 10,738.92
+01/29 Card Purchase           01/28 Kings Donuts Concord CA Card 0665 - 12.00 10,726.92
+01/29 Card Purchase With Pin  01/29 Vintage Wine Shoppe & Concord CA Card
+0665- 36.38 10,690.54
+01/30 Card Purchase           01/30 Vintage Wine Shoppe & L Concord CA Card
+0665- 23.15 10,667.39
+01/30 Venmo            Payment    1039938525632   Web ID: 3264681992 - 2,500.00 8,167.39
+01/30 Venmo            Payment    1039938515148   Web ID: 3264681992 - 509.00 7,658.39
+01/30 Shwel8778111407  Webpayment                 Web ID: 3383693141 - 480.08 7,178.31
+01/31 Card Purchase W/Cash    01/31 Petroleum & Amenities Walnut Creek CA
+Card 0665
+Purchase $58.84 Cash Back $20.00- 78.84 7,099.47
+02/03 Card Purchase           02/01 State Farm  Insurance 800-956-6310 IL Card
+0665- 106.51 6,992.96
+02/03 Card Purchase           01/31 Orange CO Superior C Acarlson@Occo CA
+Card 0665- 15.00 6,977.96
+02/03 Card Purchase           02/01 Cowell Hoa Walnutcountry CA Card 0665 - 563.00 6,414.96
+02/03 Card Purchase           02/01 Cowell Hoa Walnutcountry CA Card 0665 - 563.00 5,851.96
+02/03 Card Purchase           02/01 Uep*Tasty Szechuan Nood Concord CA Card
+0665- 43.79 5,808.17
+02/03 Recurring Card Purchase 02/02 Dropbox*Gq4Yk3Hbdkkt Dropbox.Com CA
+Card 0665- 19.99 5,788.18TRANSACTION DETAIL(continued)*start*transaction detail
+*end*transaction detail
+000000767128619  
+  000000837532084
+10198090303000000063
+ 5  6 Pageof DATE DESCRIPTION AMOUNT BALANCE
+AMOUNT January 09, 2025 throughFebruary 07, 2025  
+  Primary Account:
+0.09
+Ending Balance $528.22
+not
+Have an average qualifying deposit and investment balance of $15,000.00 or more
+OR , authorize us to make automatic payments to your qualifying Chase mortgage from your Chase account.
+Beginning Balance $229.42
+Ending Balance $77.59  
+02/03 Card Purchase With Pin  02/03 Lucky #705.Concord CA Concord CA Card
+0665- 92.24 5,695.94
+02/04 Recurring Card Purchase 02/03 Google *Nest 855-836-3987 CA Card 0665 - 8.00 5,687.94
+02/04 Card Purchase With Pin  02/04 Best Little Donut Hous Concord CA Card
+0665- 14.50 5,673.44
+02/05 Recurring Card Purchase 02/04 Paypal *Pypl Paymthly 402-935-7733 CA
+Card 0665- 42.18 5,631.26
+02/05 Card Purchase           02/04 House of Sake Inc Walnut Creek CA Card 0665 - 83.55 5,547.71
+02/06 Card Purchase With Pin  02/06 Treat Blvd 76 Concord CA Card 0665 - 30.86 5,516.85
+02/06 02/06 Online Transfer To Chk ...8619 Transaction#: 23637622827 - 4,570.00 946.85
+02/07 Card Purchase           02/05 Jersey Mikes 20367 Walnut Creek CA Card
+0665- 13.15 933.70
+02/07 Card Purchase           02/06 Fast & Easy Liquors Concord CA Card 0665 - 13.73 919.97
+02/07 Card Purchase           02/06 Huckleberry's - Concord Concord CA Card 0665 - 32.23 887.74
+02/07 Card Purchase With Pin  02/07 Fashion Cleaners Walnut Creek CA Card
+0665- 174.80 712.94
+02/07 Card Purchase With Pin  02/07 Wholefds Yvr#105 2941 Walnut Creek CA
+Card 0665- 94.61 618.33
+02/07 Card Purchase With Pin  02/07 Petroleum & Amenities Walnut Creek CA
+Card 0665- 90.20 528.13
+02/07 Interest Payment 528.22
+A monthly Service Fee was  charged to your Chase Premier Plus Checking  account.  Here are the two ways you can
+continue to avoid this fee during any statement period.
+
+       (Your average qualifying deposit and investment balance was $16,652.00)
+
+(You do not have a qualifying Chase mortgage)
+NANCY E BENNETT Account Number: 
+  
+Deposits and Additions 4,720.00
+Electronic Withdrawals -4,859.83
+Fees -12.00TRANSACTION DETAIL
+ CHASE TOTAL CHECKING
+CHECKING SUMMARY(continued)*start*transaction detail
+*end*transaction detail
+*start*post transaction detail message
+*end*post transaction detail message
+*start*global product
+*end*global product
+*start*summary
+*end*summary

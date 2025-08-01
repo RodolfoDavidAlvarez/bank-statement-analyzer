@@ -1,13 +1,23 @@
 Description,Amount,Transaction Date,Transaction Type,Status,Statement id,Bank and last 4
-Venmo Payment 1040125103652 Web ID: 3264681992,-140.0,2025-02-10,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
-Venmo Payment 1040125069889 Web ID: 3264681992,-70.14,2025-02-10,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
-Venmo Payment 1040115653361 Web ID: 3264681992,-28.59,2025-02-10,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
-Tesla Inc Tesla Moto PPD ID: 1463896777,-1171.08,2025-02-11,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
-Card Purchase 02/12 Amazon.Com*Qx29L9Hs3 Amzn.Com/Bill WA Card 0885,-17.43,2025-02-17,Debit,New,2025-03 - Chase 2084,Chase 2084
-Keller Williams Psus_Feb20 PPD ID: 1742756628,48.82,2025-02-20,Credit,New,2025-03 - Chase 2084,Chase 2084
-Lightstream Loan Pmts 45680968 Web ID: 1253108792,-1125.0,2025-02-20,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
-Venmo Payment 1040434236470 Web ID: 3264681992,-80.0,2025-02-24,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
-Card Purchase 02/23 Amazon Mktpl*1Y8FY39D3 Amzn.Com/Bill WA Card 0885,-8.62,2025-02-27,Debit,New,2025-03 - Chase 2084,Chase 2084
-Recurring Card Purchase 02/28 Netflix.Com Netflix.Com CA Card 0885,-6.99,2025-02-28,Debit,New,2025-03 - Chase 2084,Chase 2084
-Venmo Payment 1040591296551 Web ID: 3264681992,-45.74,2025-03-03,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
-Interest Payment,0.03,2025-03-07,Interest,New,2025-03 - Chase 2084,Chase 2084
+02/08 Online Transfer To Chk ...1873 Transaction#: 23662936564 -,-1000.0,2025-02-10,Transfer,New,2025-03 - Chase 2084,Chase 2084
+Card Purchase           02/09 Amazon.Com*Rp6Zz0623 Amzn.Com/Bill WA Card 0885-,-27.87,2025-02-10,Debit,New,2025-03 - Chase 2084,Chase 2084
+Card Purchase           02/10 Amazon.Com*U82E84VI3 Amzn.Com/Bill WA Card 0885-,-25.96,2025-02-10,Debit,New,2025-03 - Chase 2084,Chase 2084
+Card Purchase           02/10 Amazon.Com*Ig7E695D3 Amzn.Com/Bill WA Card 0885-,-18.15,2025-02-10,Debit,New,2025-03 - Chase 2084,Chase 2084
+02/10 Payment To Chase Card Ending IN 3944 -,-48.0,2025-02-10,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
+Tesla Inc        Tesla Moto                 PPD ID: 1463896777 -,-1171.08,2025-02-12,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
+02/12 Online Transfer To Chk ...1873 Transaction#: 23706778109 -,-500.0,2025-02-12,Transfer,New,2025-03 - Chase 2084,Chase 2084
+Lightstream      Loan Pmts  46020977        Web ID: 1253108792 -,-1125.0,2025-02-18,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
+Venmo            Payment    1040285871533   Web ID: 3264681992 -,-74.44,2025-02-18,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
+Zelle Payment To Jana Loureiro Jpm99Aydtvk6 -,-250.0,2025-02-18,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
+02/17 Online Transfer To Chk ...1873 Transaction#: 23759880877 -,-175.0,2025-02-18,Transfer,New,2025-03 - Chase 2084,Chase 2084
+02/26 Online Payment 23855756339 To The Pool Shark -,-270.0,2025-02-26,Payment,New,2025-03 - Chase 2084,Chase 2084
+02/26 Online Payment 23183402665 To Contra Costa Water District -,-115.0,2025-02-26,Payment,New,2025-03 - Chase 2084,Chase 2084
+Zelle Payment To Jeannette Cooper Jpm99Azhhsmu -,-509.0,2025-02-27,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
+02/27 Online Payment 23544971905 To Discover Card -,-250.0,2025-02-27,Payment,New,2025-03 - Chase 2084,Chase 2084
+02/27 Online Payment 23544789334 To Wave -,-85.0,2025-02-27,Payment,New,2025-03 - Chase 2084,Chase 2084
+02/27 Payment To Chase Card Ending IN 3944 -,-300.0,2025-02-27,Withdrawal,New,2025-03 - Chase 2084,Chase 2084
+Card Purchase           02/28 Amazon Mktpl*V794B4Q Amzn.Com/Bill WA Card 0885-,-45.37,2025-02-28,Debit,New,2025-03 - Chase 2084,Chase 2084
+Recurring Card Purchase 02/28 Netflix.Com Netflix.Com CA Card 0885 -,-6.99,2025-02-28,Debit,New,2025-03 - Chase 2084,Chase 2084
+Card Purchase           03/01 Amazon Mktpl*N06Aa6W Amzn.Com/Bill WA Card 0885-,-33.04,2025-03-03,Debit,New,2025-03 - Chase 2084,Chase 2084
+03/06 Online Payment 23633280093 To Mr. Cooper -,-3200.0,2025-03-06,Payment,New,2025-03 - Chase 2084,Chase 2084
+03/06 Online Payment 23556066012 To Pg&E -,-400.0,2025-03-06,Payment,New,2025-03 - Chase 2084,Chase 2084

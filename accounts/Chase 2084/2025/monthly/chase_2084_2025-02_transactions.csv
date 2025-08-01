@@ -1,19 +1,15 @@
 Description,Amount,Transaction Date,Transaction Type,Status,Statement id,Bank and last 4
-Venmo Cashout PPD ID: 5264681992,4875.0,2025-01-09,Credit,New,2025-02 - Chase 2084,Chase 2084
-Keller Williams Psus_Jan20 PPD ID: 1742756628,17.76,2025-01-21,Credit,New,2025-02 - Chase 2084,Chase 2084
-Environmental AL Rf Pmt PPD ID: 1942751173,275.72,2025-02-07,Credit,New,2025-02 - Chase 2084,Chase 2084
-Interest Payment,0.04,2025-02-07,Credit,New,2025-02 - Chase 2084,Chase 2084
-Venmo Payment 1039580470057 Web ID: 3264681992,-101.29,2025-01-13,Debit,New,2025-02 - Chase 2084,Chase 2084
-Venmo Payment 1039580443691 Web ID: 3264681992,-30.18,2025-01-13,Debit,New,2025-02 - Chase 2084,Chase 2084
-Tesla Inc Tesla Moto PPD ID: 1463896777,-1171.08,2025-01-14,Debit,New,2025-02 - Chase 2084,Chase 2084
-Lightstream Loan Pmts 45680968 Web ID: 1253108792,-1125.0,2025-01-21,Debit,New,2025-02 - Chase 2084,Chase 2084
-Card Purchase 01/24 Amazon Mktpl*Zg4WI9R Amzn.Com/Bill WA Card 0885,-46.33,2025-01-27,Debit,New,2025-02 - Chase 2084,Chase 2084
-Venmo Payment 1039873789366 Web ID: 3264681992,-121.61,2025-01-27,Debit,New,2025-02 - Chase 2084,Chase 2084
-01/29 Online Transfer To Chk ...8619 Transaction#: 23540544174,-150.0,2025-01-29,Debit,New,2025-02 - Chase 2084,Chase 2084
-01/30 Online Payment 23214609657 To Discover Card,-250.0,2025-01-30,Debit,New,2025-02 - Chase 2084,Chase 2084
-01/30 Online Payment 22028016052 To Pg&E,-5.0,2025-01-30,Debit,New,2025-02 - Chase 2084,Chase 2084
-01/30 Online Payment 23214354979 To Wave,-1.0,2025-01-30,Debit,New,2025-02 - Chase 2084,Chase 2084
-01/31 Online Payment 21955253083 To Pg&E,-250.0,2025-01-31,Debit,New,2025-02 - Chase 2084,Chase 2084
+Venmo            Payment    1039580470057   Web ID: 3264681992,-101.29,2025-01-13,Withdrawal,New,2025-02 - Chase 2084,Chase 2084
+Venmo            Payment    1039580443691   Web ID: 3264681992,-30.18,2025-01-13,Withdrawal,New,2025-02 - Chase 2084,Chase 2084
+Tesla Inc        Tesla Moto                 PPD ID: 1463896777,-1171.08,2025-01-14,Withdrawal,New,2025-02 - Chase 2084,Chase 2084
+Lightstream      Loan Pmts  45680968        Web ID: 1253108792,-1125.0,2025-01-21,Withdrawal,New,2025-02 - Chase 2084,Chase 2084
+Card Purchase           01/24 Amazon Mktpl*Zg4WI9R Amzn.Com/Bill WA Card 0885,-46.33,2025-01-27,Debit,New,2025-02 - Chase 2084,Chase 2084
+Venmo            Payment    1039873789366   Web ID: 3264681992,-121.61,2025-01-27,Withdrawal,New,2025-02 - Chase 2084,Chase 2084
+Online Transfer To Chk ...8619 Transaction#: 23540544174,-150.0,2025-01-29,Transfer,New,2025-02 - Chase 2084,Chase 2084
+01/30 Online Payment 23214609657 To Discover Card,-250.0,2025-01-30,Payment,New,2025-02 - Chase 2084,Chase 2084
+01/30 Online Payment 22028016052 To Pg&E,-5.0,2025-01-30,Payment,New,2025-02 - Chase 2084,Chase 2084
+01/30 Online Payment 23214354979 To Wave,-1.0,2025-01-30,Payment,New,2025-02 - Chase 2084,Chase 2084
+01/31 Online Payment 21955253083 To Pg&E,-250.0,2025-01-31,Payment,New,2025-02 - Chase 2084,Chase 2084
 Recurring Card Purchase 01/31 Netflix.Com Netflix.Com CA Card 0885,-6.99,2025-02-03,Debit,New,2025-02 - Chase 2084,Chase 2084
-Venmo Payment 1040005976407 Web ID: 3264681992,-158.75,2025-02-03,Debit,New,2025-02 - Chase 2084,Chase 2084
-02/06 Online Payment 23297114961 To Mr. Cooper,-3200.0,2025-02-06,Debit,New,2025-02 - Chase 2084,Chase 2084
+Venmo            Payment    1040005976407   Web ID: 3264681992,-158.75,2025-02-03,Withdrawal,New,2025-02 - Chase 2084,Chase 2084
+02/06 Online Payment 23297114961 To Mr. Cooper,-3200.0,2025-02-06,Payment,New,2025-02 - Chase 2084,Chase 2084
