@@ -1,8 +1,20 @@
-# Chase Card Statement Extraction Guide (Preparation)
+# Chase Statement Extraction Guide
 
-## Status: In Development
+## Important: Multiple Chase Statement Formats
 
-This guide is being prepared based on lessons learned from Discover statement extraction. Chase statements have different formatting that will require adaptation of our methodology.
+Chase provides different statement formats depending on the account type:
+
+### 1. Multi-Account Checking Statements
+**Accounts:** 2084, 1873, 8619
+- Multiple checking accounts in single PDF
+- See: `CHASE_MULTI_ACCOUNT_METHOD.md`
+- Status: ✅ Implemented and validated
+
+### 2. Chase Credit Card Statements  
+**Account:** 5036 (and others)
+- Single credit card account per PDF
+- Different format from checking accounts
+- Status: ⏳ Method in development
 
 ## Expected Differences from Discover
 

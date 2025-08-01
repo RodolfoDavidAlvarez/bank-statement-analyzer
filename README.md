@@ -78,10 +78,13 @@ To add a new account:
 ## Currently Supported Accounts
 
 ### Active
-- **Discover 1342**: 2025 data extracted and organized
+- **Discover 1342**: Credit card, 2025 data extracted and organized
+- **Chase 2084**: Premier Plus Checking, 2025 data validated
+- **Chase 1873**: Premier Plus Checking (Business), 2025 data validated  
+- **Chase 8619**: Total Checking, 2025 data validated
 
-### Prepared (Awaiting Data)
-- **Chase 5036**: Structure ready, awaiting statements
+### Prepared (Awaiting Different Method)
+- **Chase 5036**: Credit card, requires separate extraction method
 
 ## Contact
 

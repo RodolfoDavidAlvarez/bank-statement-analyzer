@@ -36,7 +36,9 @@ accounts/
 ```csv
 Description,Amount,Transaction Date,Transaction Type,Status,Statement id,Bank and last 4
 ```
-- **Amounts**: Positive = purchases/fees, Negative = payments/credits
+- **Amounts**: 
+  - **Discover/Credit Cards**: Positive = purchases/fees, Negative = payments/credits
+  - **Chase Checking**: Positive = deposits/credits, Negative = withdrawals/payments
 - **Dates**: YYYY-MM-DD format (e.g., 2025-01-15)
 - **Statement ID**: "YYYY-MM - Bank 0000" (e.g., "2025-01 - Discover 1342")
 - **Status**: Always "New"
@@ -68,8 +70,9 @@ Description,Amount,Transaction Date,Transaction Type,Status,Statement id,Bank an
 4. Copy consolidated to `extracted_precompiled/`
 
 ### 6. Known Accounts
-- **Discover 1342**: Active, 2025 data available
-- **Chase 5036**: Structure ready, awaiting statements
+- **Discover 1342**: Credit card, active, 2025 data available
+- **Chase 2084, 1873, 8619**: Checking accounts, multi-account PDF format, validated
+- **Chase 5036**: Credit card, different format, awaiting method development
 
 ### 7. Common Mistakes to Avoid
 1. Missing interest charges from fees section

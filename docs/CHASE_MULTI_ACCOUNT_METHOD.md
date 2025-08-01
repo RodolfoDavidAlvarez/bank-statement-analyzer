@@ -1,20 +1,30 @@
 # Chase Multi-Account Statement Extraction Method
 
+## Applicable Accounts
+
+**This method applies specifically to:**
+- Chase Premier Plus Checking (2084)
+- Chase Premier Plus Checking (1873)  
+- Chase Total Checking (8619)
+
+**Note:** Other Chase accounts (e.g., Chase 5036) may use a different statement format and require a separate extraction method.
+
 ## Overview
 
-Chase statements differ significantly from Discover as they contain multiple accounts in a single PDF. Each account must be extracted separately while maintaining our standard CSV format.
+These specific Chase checking accounts are provided in a consolidated statement format where multiple accounts appear in a single PDF. Each account must be extracted separately while maintaining our standard CSV format.
 
 ## Statement Structure
 
 ### 1. Multi-Account Format
-- Single PDF contains 3 accounts
+- Single PDF contains all 3 checking accounts
 - Each account has its own section
 - Accounts are clearly separated by pages
+- Consolidated balance summary on page 1
 
-### 2. Account Types Found
-- Chase Premier Plus Checking (2084)
-- Chase Premier Plus Checking (1873)
-- Chase Total Checking (8619)
+### 2. Account Types in This Format
+- Chase Premier Plus Checking (2084) - Personal checking
+- Chase Premier Plus Checking (1873) - Business checking
+- Chase Total Checking (8619) - Secondary checking
 
 ## Extraction Method
 
@@ -65,8 +75,8 @@ Create individual files for each account:
 |------------|---------------|-------|
 | Date (MM/DD) | Transaction Date | Convert to YYYY-MM-DD |
 | Description | Description | Full text, clean formatting |
-| Deposit Amount | Amount (negative) | Deposits are like payments |
-| Withdrawal Amount | Amount (positive) | Withdrawals are like purchases |
+| Deposit Amount | Amount (positive) | Deposits are credits to account |
+| Withdrawal Amount | Amount (negative) | Withdrawals are debits from account |
 | N/A | Transaction Type | Derive from transaction |
 | N/A | Status | Always "New" |
 | N/A | Statement id | "YYYY-MM - Chase XXXX" |
