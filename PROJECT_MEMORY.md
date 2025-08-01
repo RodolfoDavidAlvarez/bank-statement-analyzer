@@ -1,5 +1,16 @@
 # Claude Project Memory - Bank Statement Analyzer
 
+## IMPORTANT: Before Starting Any Task
+
+**ALWAYS** take a few minutes to review recent git commits to understand:
+1. What has been done previously
+2. The direction the project is moving
+3. Any patterns or conventions established
+4. Recent changes that might affect your work
+
+Use: `git log --oneline -10` to see recent commits
+Use: `git show HEAD` to see the last commit details
+
 ## Project Context
 
 This is a bank statement extraction system that processes PDF statements from multiple bank accounts and converts them into standardized CSV format for accounting purposes.
