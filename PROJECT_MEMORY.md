@@ -74,20 +74,44 @@ Description,Amount,Transaction Date,Transaction Type,Status,Statement id,Bank an
 - **Chase 2084, 1873, 8619**: Checking accounts, multi-account PDF format, validated
 - **Chase 5036**: Credit card, different format, awaiting method development
 
-### 7. Common Mistakes to Avoid
+### 7. Chase Multi-Account Extraction Details
+
+**CRITICAL**: Chase checking statements span month boundaries!
+- Example: March statement covers Feb 8 - Mar 7
+- Transactions from both months appear in one statement
+- This is NOT a bug - it's how Chase statements work
+
+**Account Detection Issue Fixed**:
+- Problem: Account numbers in page headers interfere with detection
+- Solution: Only look in CHECKING SUMMARY section for account identification
+- Ignore account numbers that appear in headers
+
+**Key Extraction Rules**:
+1. Use actual transaction date (MM/DD), not statement month
+2. Handle year boundaries for Jan/Feb statements
+3. Interest payments often show balance instead of amount (typically $0.05)
+4. Monthly Service Fee appears at end, often on same line as balance
+5. Reversals may have corrupted amounts - validate carefully
+
+**Extraction Method**: `extract_chase_robust.py`
+- Handles multi-page transactions
+- Captures deposits without balances
+- Processes all pages for each account section
+
+### 8. Common Mistakes to Avoid
 1. Missing interest charges from fees section
 2. Wrong amount signs (purchases should be positive)
 3. Incorrect date format (must be YYYY-MM-DD)
 4. Forgetting to clean merchant descriptions
 5. Line break issues when consolidating files
 
-### 8. When Adding New Accounts
+### 9. When Adding New Accounts
 1. Create account folder: `accounts/[Bank Name] [Last 4]/`
 2. Add year structure
 3. Follow same CSV format
 4. Update documentation
 
-### 9. Verification Steps
+### 10. Verification Steps
 - Count transactions per file
 - Verify interest charges included
 - Check consolidated file line breaks
