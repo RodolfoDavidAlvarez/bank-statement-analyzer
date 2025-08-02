@@ -1,6 +1,28 @@
-# Session Notes - July 31, 2025
+# Session Notes
 
-## Completed Tasks
+## Recent Work - August 1, 2025
+- Fixed Chase robust extraction to ignore header account numbers
+- Fixed deposit detection - now captures positive transactions correctly  
+- Fixed March 1873 extraction - deposits now included
+- Manually fixed reversal amount issue (needs permanent fix)
+
+## Key Fixes Applied
+- Account detection now looks in CHECKING SUMMARY section only
+- Removed automatic sign flipping - Chase PDFs have proper signs
+- Added support for deposits without balance on same line
+- Fixed account 1873 detection on page 4 of March PDF
+
+## Known Issues  
+- Reversal transactions with complex formatting need special handling
+- Date extraction needs fixing (showing Feb dates for March statement)
+
+## Next Steps
+- Fix date extraction for proper month/year
+- Add special reversal transaction handling
+- Extract remaining Chase 1873 statements (Apr-Jun)
+- Re-extract Chase 2084 and 8619 with robust method
+
+## Previous Work - July 31, 2025
 
 ### Morning Session
 - Extracted all 2025 Discover 1342 statements (Jan-June)
@@ -15,14 +37,3 @@
 - Extracted and validated all Chase checking transactions
 - Corrected amount signs to match Chase convention
 - Clarified that Chase 5036 needs different method
-
-## Key Learnings
-- Chase checking: deposits positive, withdrawals negative
-- Discover credit: purchases positive, payments negative
-- Different Chase account types use different statement formats
-- Always validate against provided data
-
-## Current Status
-- 5 accounts fully extracted and validated
-- 2 extraction methods documented
-- Ready for Chase 5036 credit card method development
