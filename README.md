@@ -70,11 +70,13 @@ All CSV files follow this standard format:
 - **`extract_discover_enhanced.py`**: Handles Discover credit card statements
   - Usage: `python3 extract_discover_enhanced.py statement.pdf`
 
-### Extraction Versioning
-All extractions now use automatic versioning:
-- First extraction: `chase_1873_2025-03_transactions_v1.csv`
-- Re-extractions: `_v2`, `_v3`, etc.
-- Preserves extraction history without deleting previous attempts
+### File Naming Convention
+Simplified naming without redundant "transactions" word:
+- Initial extraction: `chase_1873_2025-03.csv`
+- Re-extractions: `[v1]chase_1873_2025-03.csv`, `[v2]chase_1873_2025-03.csv`
+- Validated files: `[VALIDATED]chase_1873_2025-03.csv`
+
+Version/status indicators appear as prefixes for easy visibility.
 
 ## Quick Start
 

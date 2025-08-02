@@ -65,18 +65,18 @@ Description,Amount,Transaction Date,Transaction Type,Status,Statement id,Bank an
 
 #### When Processing New Statements
 1. Extract to: `accounts/[Bank] [Last4]/YYYY/monthly/`
-2. Name format: `[bank]_[last4]_YYYY-MM_transactions_v[N].csv`
-   - First extraction: `_v1`
-   - Re-extractions: `_v2`, `_v3`, etc.
-   - Keeps history of all extraction attempts
+2. Name format: `[bank]_[last4]_YYYY-MM[status].csv`
+   - First extraction: no suffix (e.g., `chase_1873_2025-03.csv`)
+   - Re-extractions: `[v1]`, `[v2]`, etc.
+   - Validated files: `[VALIDATED]`
 3. Create consolidated: `YYYY - [Bank] [Last4].csv`
 4. Copy consolidated to `extracted_precompiled/`
 
-#### Extraction Versioning
-- All extractions now use versioning (e.g., `chase_1873_2025-03_transactions_v1.csv`)
-- Each re-extraction increments the version number
-- This preserves extraction history and allows comparison
-- No need to delete previous extractions
+#### File Naming Examples
+- Initial extraction: `chase_1873_2025-03.csv`
+- Second attempt: `[v1]chase_1873_2025-03.csv`
+- Third attempt: `[v2]chase_1873_2025-03.csv`
+- Once validated: `[VALIDATED]chase_1873_2025-03.csv`
 
 #### Validation Status
 - **[VALIDATED]** prefix indicates verified extractions

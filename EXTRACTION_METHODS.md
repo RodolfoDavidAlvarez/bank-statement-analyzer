@@ -103,6 +103,15 @@ Always verify:
 4. All special transactions captured
 5. Dates are in correct YYYY-MM-DD format
 
+## File Naming Convention
+
+All extracted files follow this pattern:
+- Initial extraction: `bank_account_YYYY-MM.csv`
+- Re-extractions: `[v1]bank_account_YYYY-MM.csv`, `[v2]bank_account_YYYY-MM.csv`
+- Validated: `[VALIDATED]bank_account_YYYY-MM.csv`
+
+Note: The word "transactions" is omitted as all files contain transactions.
+
 ## Adding New Extraction Methods
 
 When creating a new extraction method:
@@ -111,3 +120,4 @@ When creating a new extraction method:
 3. Handle all edge cases found
 4. Test on multiple months
 5. Document specific quirks and solutions
+6. Follow the file naming convention above
