@@ -31,7 +31,10 @@
       "Bash(chmod:*)",
       "Bash(pdfinfo:*)",
       "mcp__ide__executeCode",
-      "Bash(awk:*)"
+      "Bash(awk:*)",
+      "Bash(sed:*)",
+      "Bash(git checkout:*)",
+      "Bash(git rm:*)"
     ],
     "deny": []
   }

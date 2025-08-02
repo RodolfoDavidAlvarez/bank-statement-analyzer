@@ -405,7 +405,7 @@ class ChaseRobustExtractor:
                     print("    Hint: Might be missing a large transfer or payment")
             
     def save_transactions(self, account: str):
-        """Save transactions for an account to CSV."""
+        """Save transactions for an account to CSV with versioning."""
         if account not in self.account_sections:
             print(f"No transactions found for account {account}")
             return None
@@ -416,8 +416,28 @@ class ChaseRobustExtractor:
         output_dir = Path(f"accounts/Chase {account}/{self.year}/monthly")
         output_dir.mkdir(parents=True, exist_ok=True)
         
-        # Output filename
-        filename = f"chase_{account}_{self.year}-{self.month:02d}_transactions.csv"
+        # Base filename without version
+        base_filename = f"chase_{account}_{self.year}-{self.month:02d}_transactions"
+        
+        # Find next version number
+        existing_versions = []
+        for f in output_dir.glob(f"{base_filename}_v*.csv"):
+            # Extract version number
+            version_str = f.stem.split('_v')[-1]
+            try:
+                version = int(version_str)
+                existing_versions.append(version)
+            except ValueError:
+                pass
+        
+        # Also check if unversioned file exists
+        if (output_dir / f"{base_filename}.csv").exists():
+            existing_versions.append(0)  # Consider unversioned as v0
+        
+        next_version = max(existing_versions, default=0) + 1
+        
+        # Output filename with version
+        filename = f"{base_filename}_v{next_version}.csv"
         output_path = output_dir / filename
         
         # Convert to standard format
