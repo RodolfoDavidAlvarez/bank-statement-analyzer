@@ -78,6 +78,12 @@ Description,Amount,Transaction Date,Transaction Type,Status,Statement id,Bank an
 - This preserves extraction history and allows comparison
 - No need to delete previous extractions
 
+#### Validation Status
+- **[VALIDATED]** prefix indicates verified extractions
+- These files have been reconciled and confirmed accurate
+- See VALIDATION_STATUS.md for current status of all accounts
+- Validated files should not be modified or re-extracted
+
 ### 6. Known Accounts
 - **Discover 1342**: Credit card, active, 2025 data available
 - **Chase 2084, 1873, 8619**: Checking accounts, multi-account PDF format, validated

@@ -53,12 +53,28 @@ Each account follows this organization:
 
 All CSV files follow this standard format:
 - **Description**: Merchant name (clean, no categories)
-- **Amount**: Positive for purchases, negative for payments/credits
+- **Amount**: 
+  - Discover/Credit Cards: Positive for purchases/fees, negative for payments/credits
+  - Chase Checking: Positive for deposits/credits, negative for withdrawals/payments
 - **Transaction Date**: YYYY-MM-DD format
-- **Transaction Type**: Purchase, Payment, Credit, or Interest Charge
+- **Transaction Type**: Purchase, Payment, Credit, Interest, Deposit, Withdrawal, etc.
 - **Status**: "New" for all transactions
 - **Statement id**: "YYYY-MM - Bank 0000" format
 - **Bank and last 4**: e.g., "Discover 1342"
+
+## Extraction Methods
+
+### Available Extractors
+- **`extract_chase_robust.py`**: Handles Chase multi-account PDFs (2084, 1873, 8619)
+  - Usage: `python3 extract_chase_robust.py statement.pdf [account]`
+- **`extract_discover_enhanced.py`**: Handles Discover credit card statements
+  - Usage: `python3 extract_discover_enhanced.py statement.pdf`
+
+### Extraction Versioning
+All extractions now use automatic versioning:
+- First extraction: `chase_1873_2025-03_transactions_v1.csv`
+- Re-extractions: `_v2`, `_v3`, etc.
+- Preserves extraction history without deleting previous attempts
 
 ## Quick Start
 
