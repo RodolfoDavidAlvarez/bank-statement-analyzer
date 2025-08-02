@@ -419,49 +419,37 @@ class ChaseRobustExtractor:
         # Base filename
         base_filename = f"chase_{account}_{self.year}-{self.month:02d}"
         
-        # Find next version number
-        existing_versions = []
+        # Check what versions exist
+        import re
+        existing_files = list(output_dir.glob(f"{base_filename}*.csv"))
         
-        # Check for versioned files with prefix format [v1]
-        for f in output_dir.glob(f"[v*]{base_filename}.csv"):
-            # Extract version number from [v1] prefix
-            import re
-            match = re.search(r'^\[v(\d+)\]', f.name)
-            if match:
-                existing_versions.append(int(match.group(1)))
+        # If validated version exists, don't overwrite
+        if any('[VALIDATED]' in f.name for f in existing_files):
+            print(f"WARNING: Validated version exists for {base_filename}")
+            print("Creating new version instead of overwriting validated file")
         
-        # Check for old formats (suffix versions)
-        for f in output_dir.glob(f"{base_filename}[v*.csv"):
-            match = re.search(r'\[v(\d+)\]\.csv$', f.name)
-            if match:
-                existing_versions.append(int(match.group(1)))
-                
-        for f in output_dir.glob(f"{base_filename}_v*.csv"):
-            version_str = f.stem.split('_v')[-1]
-            try:
-                existing_versions.append(int(version_str))
-            except ValueError:
-                pass
+        # Find highest version number
+        max_version = 0
+        has_unversioned = False
         
-        # Check if unversioned file exists
-        if (output_dir / f"{base_filename}.csv").exists():
-            existing_versions.append(0)  # Consider unversioned as v0
-            
-        # Check if validated version exists
-        if (output_dir / f"[VALIDATED]{base_filename}.csv").exists():
-            # If validated exists, start from v1 for new attempts
-            if 0 not in existing_versions:
-                existing_versions.append(0)
+        for f in existing_files:
+            if f.name == f"{base_filename}.csv":
+                has_unversioned = True
+            elif match := re.search(r'\[v(\d+)\]\.csv$', f.name):
+                version = int(match.group(1))
+                max_version = max(max_version, version)
         
-        next_version = max(existing_versions, default=0) + 1
-        
-        # Output filename with version prefix
-        if next_version == 1 and not existing_versions:
-            # First extraction, no version needed
+        # Determine output filename
+        if not existing_files:
+            # First extraction - no version suffix
             filename = f"{base_filename}.csv"
+        elif has_unversioned and max_version == 0:
+            # Unversioned exists, create v1
+            filename = f"{base_filename}[v1].csv"
         else:
-            # Subsequent extractions get version prefix
-            filename = f"[v{next_version}]{base_filename}.csv"
+            # Create next version
+            next_version = max_version + 1
+            filename = f"{base_filename}[v{next_version}].csv"
             
         output_path = output_dir / filename
         

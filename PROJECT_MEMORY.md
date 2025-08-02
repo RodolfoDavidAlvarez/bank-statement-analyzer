@@ -74,12 +74,14 @@ Description,Amount,Transaction Date,Transaction Type,Status,Statement id,Bank an
 
 #### File Naming Examples
 - Initial extraction: `chase_1873_2025-03.csv`
-- Second attempt: `[v1]chase_1873_2025-03.csv`
-- Third attempt: `[v2]chase_1873_2025-03.csv`
-- Once validated: `[VALIDATED]chase_1873_2025-03.csv`
+- Second attempt: `chase_1873_2025-03[v1].csv`
+- Third attempt: `chase_1873_2025-03[v2].csv`
+- Once validated: `chase_1873_2025-03[VALIDATED].csv`
+
+**Important**: Only ONE file exists per month - versions replace previous attempts.
 
 #### Validation Status
-- **[VALIDATED]** prefix indicates verified extractions
+- **[VALIDATED]** suffix indicates verified extractions
 - These files have been reconciled and confirmed accurate
 - See VALIDATION_STATUS.md for current status of all accounts
 - Validated files should not be modified or re-extracted
